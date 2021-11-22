@@ -1,9 +1,11 @@
 pipeline {
-    agent { label 'master' }
+    agent {
+        docker { image 'node:14-alpine' }
+    }
     stages {
-        stage('build') {
+        stage('Test') {
             steps {
-                echo "Hello World456!"
+                sh 'node --version'
             }
         }
     }
