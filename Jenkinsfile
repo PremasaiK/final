@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                bat 'node --version'
-                bat 'svn --version'
+                sh 'node --version'
+                sh 'svn --version'
             }
         }
     }
