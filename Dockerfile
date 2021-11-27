@@ -1,2 +1,2 @@
 FROM node:14-alpine
-EXPOSE 8000
+RUN apk add -U subversion
